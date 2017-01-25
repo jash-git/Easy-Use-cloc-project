@@ -1,0 +1,5 @@
+REM 資料來源:https://sourceforge.net/projects/cloc/?source=typ_redirect
+REM 資料來源:http://blog.miniasp.com/post/2009/08/24/Useful-tool-CLOC-Count-Lines-of-Code.aspx
+
+cloc-1.64 . --no3
+pause
