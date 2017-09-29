@@ -4,10 +4,15 @@
 但是因為它非編譯器，所以不會替除無用#if內容
 
 因此該範例會偵測到31行
+
+註解內的空白列為計算到註解的行數，而是統計在空白的計數器中
+
+寫在程式碼後的註解也不會被統計到註解註解的行數
 */
 
 #define DEBUG
 #define MYTEST 
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +23,7 @@ namespace Console_ifdefined
 {
     class Program
     {
-        static void pause()
+        static void pause()//模擬DOS的pause命令
         {
             Console.Write("Press any key to continue . . . ");
             Console.ReadKey(true);
